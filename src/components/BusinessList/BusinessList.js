@@ -12,7 +12,7 @@ class BusinessList extends Component {
                     })
                 }
             </div>
-        )
+        );
 
     }
 }
