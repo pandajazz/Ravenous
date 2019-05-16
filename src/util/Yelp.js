@@ -51,7 +51,7 @@ const Yelp = {
    * Add functionality to provide users with the ability to view reviews.
    * @param {*} id 
    */
-  getReviews(id) {
+  getReviews: function(id) {
     return Yelp.getAccessToken()
       .then(() => {
         return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/${id}/reviews`, { headers: { Authorization: `Bearer ${accessToken}`}})
